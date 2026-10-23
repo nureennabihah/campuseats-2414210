@@ -1,0 +1,207 @@
+[
+  {
+    "id": "my-restaurant",
+    "name": "Brew & Bites",
+    "location": "Mahallah Asiah, Block A",
+    "openHours": "11:00 AM - 10:00 PM",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "MENU01",
+        "name": "Mini Apam Balik",
+        "description": "Mini pancakes filled with crushed peanuts, sugar, and sweet corn.",
+        "price": 3,
+        "category": "Snacks",
+        "available": true
+      },
+      {
+        "id": "MENU02",
+        "name": "Chicken Onigiri",
+        "description": "Japanese-style rice triangles filled with seasoned chicken and wrapped in seaweed.",
+        "price": 5,
+        "category": "Rice Snacks",
+        "available": true
+      },
+      {
+        "id": "MENU03",
+        "name": "Sausage Roll",
+        "description": "A savoury pastry roll filled with sausage.",
+        "price": 3.5,
+        "category": "Bakery",
+        "available": true
+      },
+      {
+        "id": "MENU04",
+        "name": "Popia Goreng",
+        "description": "Crispy spring rolls with vegetables and savoury seasoning.",
+        "price": 3,
+        "category": "Local Snacks",
+        "available": false
+      },
+      {
+        "id": "MENU05",
+        "name": "Chocolate Muffin",
+        "description": "A soft chocolate muffin perfect for a quick snack.",
+        "price": 3.5,
+        "category": "Bakery",
+        "available": true
+      },
+      {
+        "id": "MENU06",
+        "name": "Tuna Sandwich",
+        "description": "A sandwich filled with tuna and fresh vegetables.",
+        "price": 4.5,
+        "category": "Sandwiches",
+        "available": true
+      },
+      {
+        "id": "MENU07",
+        "name": "French Fries",
+        "description": "Golden and crispy fries served as a light snack.",
+        "price": 4,
+        "category": "Snacks",
+        "available": true
+      },
+      {
+        "id": "MENU08",
+        "name": "Iced Chocolate",
+        "description": "A chilled chocolate drink.",
+        "price": 4,
+        "category": "Drinks",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "kafe-aminah",
+    "name": "Kafe Mahallah Aminah",
+    "location": "Mahallah Aminah, Ground Floor",
+    "openHours": "8:00 AM - 10:00 PM",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "ami-1",
+        "name": "Nasi Ayam penyet",
+        "description": "Smashed fried chicked with sambal and rice",
+        "price": 7,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "ami-2",
+        "name": "Air Sirap Limau",
+        "description": "Refreshing lime syrup drink",
+        "price": 2.5,
+        "category": "Drinks",
+        "available": true
+      },
+      {
+        "id": "ami-3",
+        "name": "Bubur Ayam",
+        "description": "Warm rice porridge topped with shredded chicken, fried shallots, and spring onions.",
+        "price": 5,
+        "category": "Rice & Porridge",
+        "available": true
+      }
+    ]
+  },
+
+  {
+    "id": "kafe-maryam",
+    "name": "Campus Diner",
+    "location": "Mahallah Maryam, Block A",
+    "openHours": "7:00 am - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "mar-1",
+        "name": "Nasi Ayam Gepuk",
+        "description": "Fried chicken with rice and sambal",
+        "price": 7.5,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "mar-2",
+        "name": "Nasi Tomato",
+        "description": "Rice with Ayam Masak Merah and Mixed Vegetables ",
+        "price": 7.5,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "mar-3",
+        "name": "Spaghetti Bolognese",
+        "description": "Pasta with tomato sauce and parmesan cheese",
+        "price": 6,
+        "category": "Western",
+        "available": false
+      },
+      {
+        "id": "mar-4",
+        "name": "Crispy Burger",
+        "description": "Crispy chicken Burger served with French Fries",
+        "price": 6,
+        "category": "Western",
+        "available": true
+      },
+      {
+        "id": "mar-5",
+        "name": "Donut Bites",
+        "description": "Mini donuts of 3 different flavors",
+        "price": 4,
+        "category": "Dessert",
+        "available": true
+      },
+      {
+        "id": "mar-6",
+        "name": "Chocolate Waffle",
+        "description": "Crispy Waffle with Nutella spread",
+        "price": 3,
+        "category": "Dessert",
+        "available": true
+      },
+      {
+        "id": "mar-7",
+        "name": "Watermelon Juice ",
+        "description": "Freshly squeezed watermelon juice drink",
+        "price": 3,
+        "category": "Drinks",
+        "available": false
+      },
+      {
+        "id": "mar-8",
+        "name": "Iced Hazelnut Chocolate",
+        "description": "Chocolate drink with Hazelnut Drizzle",
+        "price": 3,
+        "category": "Drinks",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "kafe-aminah",
+    "name": "Kafe Aminah",
+    "location": "Mahallah Aminah, Ground Floor",
+    "openHours": "7:00 am - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "ami-1",
+        "name": "Nasi Ayam Penyet",
+        "description": "Smashed fried chicken with rice and sambal",
+        "price": 9,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "ami-3",
+        "name": "   Air Bandung",
+        "description": "Rose Syrup with milk ",
+        "price": 3,
+        "category": "Drinks",
+        "available": true
+      }
+    ]
+  }
+]
