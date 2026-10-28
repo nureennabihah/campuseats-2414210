@@ -18,6 +18,7 @@ function App() {
   const [view, setView] = useState("menu"); // 'menu' | 'cart' | 'done'
   const [lastOrder, setLastOrder] = useState(null);
 
+  const [query, setQuery] = useState(""); // B6 (digit 0): search box text
   // B2: fetch the vendors from the mpock API.
   useEffect(() => {
     const controller = new AbortController();
@@ -62,6 +63,12 @@ function App() {
   const selectedVendor = vendors.find(
     (vendor) => vendor.id === selectedVendorId,
   );
+
+  const visibleMenu = selectedVendor
+    ? selectedVendor.menu.filter((item) =>
+        item.name.toLowerCase().includes(query.trim().toLowerCase()),
+      )
+    : [];
 
   // B3: a real cart. Adding am item already in the cart increases its qty.
   function handleAddToCart(item) {
@@ -166,7 +173,17 @@ function App() {
         {selectedVendor && (
           <section>
             <h2 className="section-title">Menu: {selectedVendor.name}</h2>
-            <MenuList items={selectedVendor.menu} onAdd={handleAddToCart} />
+
+            {/* Controlled input; it shows 'query', typing updates 'query' */}
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search menu by name..."
+            />
+            <p className="muted">{visibleMenu.length} item(s) found</p>
+
+            <MenuList items={visibleMenu} onAdd={handleAddToCart} />
           </section>
         )}
       </>
@@ -180,29 +197,7 @@ function App() {
         onShowMenu={() => setView("menu")}
         onShowCart={() => setView("cart")}
       />
-      <main className="container">
-        {content}
-        <section>
-          <h2 className="section-title">Choose a vendor</h2>
-          <div className="vendor-grid">
-            {vendors.map((vendor) => (
-              <VendorCard
-                key={vendor.id}
-                vendor={vendor}
-                isSelected={vendor.id === selectedVendorId}
-                onSelect={setSelectedVendorId}
-              />
-            ))}
-          </div>
-        </section>
-
-        {selectedVendor && (
-          <section>
-            <h2 className="section-title">Menu: {selectedVendor.name}</h2>
-            <MenuList items={selectedVendor.menu} onAdd={handleAddToCart} />
-          </section>
-        )}
-      </main>
+      <main className="container">{content}</main>
       <Footer />
     </>
   );
