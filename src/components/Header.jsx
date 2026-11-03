@@ -1,18 +1,25 @@
+import { useCart } from "../hooks/useCart.js";
+import { NavLink } from "react-router";
+
 // vendors and cart are button that tell App which view to show.
-function Header({ cartCount, onShowMenu, onShowCart }) {
+function Header() {
   // const cartCount = 0; // becomes state in Part C
+
+  const { count } = useCart();
 
   return (
     <header className="header">
       <h1 className="logo">CampusEats</h1>
       <nav className="nav">
-        <button type="button" className="link" onClick={onShowMenu}>
+        <NavLink to="/" end className="link">
           Vendors
-        </button>
-        <button type="button" className="link cart" onClick={onShowCart}>
-          {/*cartCount is the total quantity, computed in App */}
-          Cart <span className="badge">{cartCount}</span>
-        </button>
+        </NavLink>
+        <NavLink to="/orders" className="link">
+          My Orders
+        </NavLink>
+        <NavLink to="/cart" className="link cart">
+          Cart <span className="badge">{count}</span>
+        </NavLink>
       </nav>
     </header>
   );

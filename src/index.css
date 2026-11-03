@@ -537,3 +537,40 @@ a.card:hover {
 .error {
   border-left: 4px solid #b3261e;
 }
+
+a.vendor-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.menu-grid .card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+.menu-grid .thumb {
+  width: 48px;
+  height: 48px;
+  font-size: 1.25rem;
+}
+
+.menu-grid .card button {
+  width: auto;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+}
+
+.section-title {
+  margin: 0.75rem 0 1rem;
+}
