@@ -18,3 +18,4 @@ If you are developing a production application, we recommend using TypeScript wi
 ## lab 3
 
 vendors 3-4 from 2415952.
+vendor 5 id from 2416464.

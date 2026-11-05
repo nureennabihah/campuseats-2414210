@@ -62,3 +62,21 @@ Add a new section every week, before you tag. Did not use AI? Write "None" under
 
 - The AI initially suggested code that accessed selectedVendor.name without checking whether the page loaded.
 - I fixed it by adding a condition to display the menu only when selectedVendor exists.
+
+# Lab 4
+
+1. Tool(s): Gemini
+
+2. What I asked for:
+
+- I ask help with updating App.jsx from the old Lab 3 structure to use React Router ( BrowserRouter, Routes, and Route ) and CartProvider.
+
+- I also ask for help setting up search filtering using URL query parameters.
+
+3. What I kept, changed or rejected, and why:
+
+- I kept the main routing structure because it makes navigation between pages easier to manage. I also adjusted the import paths to match my project folders, such as ./context/CartProvider.jsx
+
+4. One thing the AI got wrong and how I fixed it:
+
+- The AI initially mixed the old Week 3 view state (if (view === 'cart)) with the new routing structure, wich caused errors. I fixed this by removing the old view-switching code and using React Router on handle navigation instead.
